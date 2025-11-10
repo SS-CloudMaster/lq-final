@@ -235,6 +235,34 @@
             -ms-overflow-style: none;
             scrollbar-width: none;
         }
+        /* Orbit container positions the rocket relative to text */
+        .orbit-container {
+             position: relative;
+            display: inline-block;
+        }
+
+        /* The moving rocket */
+        .orbit {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform-origin: center;
+            animation: ovalOrbit 6s ease-in-out infinite;
+            font-size: 2.5rem; /* Adjust rocket size */
+            z-index: 5;
+            text-shadow: 0 0 12px rgba(255, 0, 200, 0.7);
+            filter: drop-shadow(0 0 8px rgba(255, 0, 200, 0.5));
+            }
+
+         /* Elliptical orbit animation */
+        @keyframes ovalOrbit {
+            0%   { transform: rotate(0deg) translateX(80px) translateY(0px) rotate(0deg); }
+            25%  { transform: rotate(90deg) translateX(60px) translateY(20px) rotate(-90deg); }
+            50%  { transform: rotate(180deg) translateX(80px) translateY(0px) rotate(-180deg); }
+            75%  { transform: rotate(270deg) translateX(60px) translateY(-20px) rotate(-270deg); }
+            100% { transform: rotate(360deg) translateX(80px) translateY(0px) rotate(-360deg); }
+            }
+
     </style>
 </head>
 <body>
@@ -338,9 +366,12 @@
         </div>
         
         <div class="container mx-auto px-4 text-center relative z-10 reveal">
-            <div class="mb-6">
-                <div class="text-6xl mb-4">🚀</div>
-                <div class="text-sm font-semibold text-[var(--accent)] mb-2">LAUNCH QUESTS</div>
+            <div class="mb-6 relative inline-block orbit-container">
+                 <!-- 🚀 Rocket Orbit Wrapper -->
+                <div class="orbit">🚀</div>
+
+                    <!-- Keep your text exactly as before -->
+                <div class="text-sm font-semibold text-[var(--accent)] mb-2 mt-16">LAUNCH QUESTS</div>
             </div>
             <h1 class="text-5xl md:text-7xl font-bold mb-6">
                 <span class="gradient-text">Launch Smarter,</span><br>
