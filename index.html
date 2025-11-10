@@ -235,15 +235,6 @@
             -ms-overflow-style: none;
             scrollbar-width: none;
         }
-        .rocket {
-            position: fixed; /* follows mouse globally */
-            top: 0;
-            left: 0;
-            font-size: 2.5rem;
-            pointer-events: none; /* so it doesn’t block clicks */
-            transition: transform 0.15s ease-out; /* smooth following */
-            z-index: 9999;
-        }
     </style>
 </head>
 <body>
@@ -348,7 +339,7 @@
         
         <div class="container mx-auto px-4 text-center relative z-10 reveal">
             <div class="mb-6 relative inline-block orbit-container">
-                <div class="rocket">🚀</div>
+                <div class="text-6xl mb-4">🚀</div>
                 <div class="text-sm font-semibold text-[var(--accent)] mb-2 mt-16">LAUNCH QUESTS</div>
             </div>
             <h1 class="text-5xl md:text-7xl font-bold mb-6">
