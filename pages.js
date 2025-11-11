@@ -863,7 +863,7 @@ function loadAllPages() {
                     </svg>
                     <div>
                       <p class="font-semibold">Email</p>
-                      <p class="text-[var(--text-secondary)]">hello@launchquests.com</p>
+                      <p class="text-[var(--text-secondary)]">solutions@launchquests.com</p>
                     </div>
                   </div>
                   <div class="flex items-start">
@@ -872,7 +872,7 @@ function loadAllPages() {
                     </svg>
                     <div>
                       <p class="font-semibold">Phone</p>
-                      <p class="text-[var(--text-secondary)]">+91-XXXXXXXXXX</p>
+                      <p class="text-[var(--text-secondary)]">+91 72041 48390</p>
                     </div>
                   </div>
                   <div class="flex items-start">
