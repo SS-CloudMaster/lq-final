@@ -366,7 +366,7 @@
         loop 
         playsinline
         preload="auto">
-        <source src="lq-final/video.mp4" type="video/mp4">
+        <source src="video.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
         <div class="absolute inset-0 opacity-10">
@@ -1617,5 +1617,14 @@ document.getElementById("contact-form").addEventListener("submit", async functio
         });
     }
     </script>
+    <script>
+        window.tailwind.config = {
+        important: true,
+        corePlugins: {
+        preflight: true,
+    }
+  }
+</script>
+<script src="https://cdn.tailwindcss.com"></script>
 </body>
 </html>
