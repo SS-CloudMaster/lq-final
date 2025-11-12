@@ -63,13 +63,19 @@ function setupNavigation() {
     if (!link.hasAttribute('data-listener-attached')) {
       link.setAttribute('data-listener-attached', 'true');
       link.addEventListener('click', (e) => {
+      const page = link.getAttribute('data-page');
+// If nav-link has a dropdown (next sibling .dropdown-menu), let the dropdown handler manage clicks
+      const hasDropdown = link.nextElementSibling && link.nextElementSibling.classList.contains('dropdown-menu');
+
+    if (page && !hasDropdown) {
         e.preventDefault();
-        e.stopPropagation();
-        const page = link.getAttribute('data-page');
-        if (page) {
-          window.showPage(page);
-        }
-      });
+        // don't call stopPropagation() here — allow dropdown handlers / document handlers to run
+        window.showPage(page);
+    } else if (!page && hasDropdown) {
+        // Let the dropdown click handler take over (we already handle it in setupDropdowns)
+        e.preventDefault();
+    }
+  });
     }
   });
 }
