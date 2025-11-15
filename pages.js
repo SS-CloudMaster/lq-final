@@ -914,7 +914,11 @@ function loadAllPages() {
           
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             <div class="glass rounded-xl overflow-hidden card-hover reveal">
-              <div class="h-48 bg-gradient-to-br from-[var(--accent)] to-blue-600 flex items-center justify-center text-6xl">📊</div>
+              <div class="h-48 relative flex items-center justify-center text-6xl bg-cover bg-center"
+                style="background-image: url('img/CRM.png');">
+              <div class="absolute inset-0 bg-black/40"></div>
+              <span class="relative z-10">📊</span>
+              </div>
               <div class="p-6">
                 <span class="text-xs font-bold text-[var(--accent)] bg-[var(--bg-secondary)] px-3 py-1 rounded-full">CRM Guides</span>
                 <h3 class="text-xl font-bold mt-4 mb-2">5 CRM Mistakes Costing You ₹10L Per Year</h3>
