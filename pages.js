@@ -139,7 +139,7 @@ function loadAllPages() {
               <p class="text-xl text-[var(--text-secondary)] max-w-3xl mx-auto">Fast, Secure, Conversion-Optimized Business Websites & E-Commerce Platforms</p>
             </div>
             
-            <img src="https://pplx-res.cloudinary.com/image/upload/v1754741713/pplx_project_search_images/1d8da61b215a12eda0f4ea052197d691ce6c5e0e.png" alt="Web Development Dashboard" class="w-full h-96 object-cover rounded-xl mb-16 reveal">
+            <img src="our_services_img/1.png" alt="Web Development Dashboard" class="w-full h-96 object-cover rounded-xl mb-16 reveal">
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
               <div class="glass rounded-xl p-8 reveal">
@@ -251,12 +251,12 @@ function loadAllPages() {
         <div class="container mx-auto px-4">
           <div class="max-w-5xl mx-auto">
             <div class="text-center mb-16 reveal">
-              <div class="text-sm font-bold text-[var(--accent)] mb-4">IT INFRASTRUCTURE & DEVOPS</div>
+              <div class="text-sm font-bold text-[var(--accent)] mb-4">IT SOLUTIONS</div>
               <h1 class="text-5xl md:text-6xl font-bold mb-6">Enterprise-Grade <span class="gradient-text">IT Infrastructure & Security</span></h1>
               <p class="text-xl text-[var(--text-secondary)] max-w-3xl mx-auto">Server Setup, Firewall Configuration, CI/CD Pipelines, 24/7 Support</p>
             </div>
             
-            <img src="https://pplx-res.cloudinary.com/image/upload/v1761618455/pplx_project_search_images/adf20e9f321ad61b1d72ffad514b3d8eb79c6d56.png" alt="IT Infrastructure Security" class="w-full h-96 object-cover rounded-xl mb-16 reveal">
+            <img src="our_services_img/4.png" alt="IT Infrastructure Security" class="w-full h-96 object-cover rounded-xl mb-16 reveal">
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
               <div class="glass rounded-xl p-8 reveal">
@@ -373,7 +373,7 @@ function loadAllPages() {
               <p class="text-xl text-[var(--text-secondary)] max-w-3xl mx-auto">WhatsApp Integration, Lead Nurture Automation, Analytics Dashboard</p>
             </div>
             
-            <img src="https://pplx-res.cloudinary.com/image/upload/v1755106066/pplx_project_search_images/2f850982e541dc44f41e7f110adf788f46e07052.png" alt="CRM Workflow" class="w-full h-96 object-cover rounded-xl mb-16 reveal">
+            <img src="our_services_img/3.png" alt="CRM Workflow" class="w-full h-96 object-cover rounded-xl mb-16 reveal">
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
               <div class="glass rounded-xl p-8 reveal">
