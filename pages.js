@@ -260,7 +260,7 @@ function loadAllPages() {
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
               <div class="glass rounded-xl p-8 reveal">
-                <img src="https://pplx-res.cloudinary.com/image/upload/v1754762433/pplx_project_search_images/5305b55ea44280fbb484477865634a3c7c0948bb.png" alt="Server Setup" class="w-full h-48 object-cover rounded-lg mb-4">
+                <img src="our_services_img/4.png" alt="Server Setup" class="w-full h-48 object-cover rounded-lg mb-4">
                 <h3 class="text-2xl font-bold mb-3">🖥️ Server Setup & Hosting</h3>
                 <p class="text-[var(--text-secondary)] mb-4">Reliable cloud hosting with automated backups, load balancing, and disaster recovery.</p>
                 <ul class="space-y-2 text-sm text-[var(--text-secondary)]">
@@ -377,7 +377,7 @@ function loadAllPages() {
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
               <div class="glass rounded-xl p-8 reveal">
-                <img src="https://pplx-res.cloudinary.com/image/upload/v1762153579/pplx_project_search_images/69cd696731d6ce930465e837d6b17ad8ecb13c30.png" alt="Custom CRM" class="w-full h-48 object-cover rounded-lg mb-4">
+                <img src="our_services_img/3.png" alt="Custom CRM" class="w-full h-48 object-cover rounded-lg mb-4">
                 <h3 class="text-2xl font-bold mb-3">📊 Custom CRM Build</h3>
                 <p class="text-[var(--text-secondary)] mb-4">Tailored CRM system designed for your specific sales process and workflow needs.</p>
                 <ul class="space-y-2 text-sm text-[var(--text-secondary)]">
