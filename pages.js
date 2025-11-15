@@ -917,7 +917,6 @@ function loadAllPages() {
               <div class="h-48 relative flex items-center justify-center text-6xl bg-cover bg-center"
                 style="background-image: url('img/CRM.png');">
               <div class="absolute inset-0 bg-black/40"></div>
-              <span class="relative z-10">📊</span>
               </div>
               <div class="p-6">
                 <span class="text-xs font-bold text-[var(--accent)] bg-[var(--bg-secondary)] px-3 py-1 rounded-full">CRM Guides</span>
