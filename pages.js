@@ -18,7 +18,7 @@ function loadAllPages() {
               <p class="text-xl text-[var(--text-secondary)] max-w-3xl mx-auto">SEO, Paid Ads, Social Media, Email Automation - All integrated for maximum ROI</p>
             </div>
             
-            <img src="https://pplx-res.cloudinary.com/image/upload/v1755694352/pplx_project_search_images/d454dfc8287bc4602ec216199c5024b3f9c56403.png" alt="SEO Optimization" class="w-full h-96 object-cover rounded-xl mb-16 reveal">
+            <img src="our_services_img/2.png" alt="SEO Optimization" class="w-full h-96 object-cover rounded-xl mb-16 reveal">
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
               <div class="glass rounded-xl p-8 reveal">
