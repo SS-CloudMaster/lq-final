@@ -778,11 +778,11 @@ function loadAllPages() {
           <div class="glass rounded-xl p-8 max-w-4xl mx-auto reveal">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
               <div>
-                <div class="text-3xl font-bold gradient-text mb-2">3+ Years</div>
+                <div class="text-3xl font-bold gradient-text mb-2">1+ Years</div>
                 <p class="text-[var(--text-secondary)]">In Business</p>
               </div>
               <div>
-                <div class="text-3xl font-bold gradient-text mb-2">50+ Projects</div>
+                <div class="text-3xl font-bold gradient-text mb-2">10+ Projects</div>
                 <p class="text-[var(--text-secondary)]">Completed</p>
               </div>
               <div>
