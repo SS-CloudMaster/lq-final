@@ -327,7 +327,7 @@ if (testimonialDots.length > 0) {
 }
 
 // ============================================
-// Contact Form Submission
+// Contact Form Submission with WhatsApp Integration
 // ============================================
 function setupContactForm(formId, messageId) {
   const contactForm = document.getElementById(formId);
@@ -338,29 +338,79 @@ function setupContactForm(formId, messageId) {
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
       
+      // Get form data
+      const formData = new FormData(contactForm);
+      const name = formData.get('name') || 'Not provided';
+      const email = formData.get('email') || 'Not provided';
+      const phone = formData.get('phone') || 'Not provided';
+      const company = formData.get('company') || 'Not provided';
+      const service = formData.get('service') || 'Not provided';
+      const message = formData.get('message') || 'Not provided';
+      
+      // Get current timestamp
+      const timestamp = new Date().toLocaleString('en-IN', { 
+        timeZone: 'Asia/Kolkata',
+        dateStyle: 'medium',
+        timeStyle: 'short'
+      });
+      
+      // Format WhatsApp message
+      const whatsappNumber = '917204148390'; // +91 72041 48390
+      const whatsappMessage = `🆕 *New Contact Form Submission*
+
+👤 *Name:* ${name}
+📧 *Email:* ${email}
+📱 *Phone:* ${phone}
+🏢 *Company:* ${company}
+🎯 *Service Interested:* ${service}
+
+💬 *Message:*
+${message}
+
+🕒 *Submitted:* ${timestamp}
+📍 *Source:* Launch Quests Website
+
+---
+_Please respond to this lead ASAP!_`;
+      
+      // URL encode the message
+      const encodedMessage = encodeURIComponent(whatsappMessage);
+      
+      // Create WhatsApp URL
+      const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+      
       // Show success message
       if (formMessage) {
         formMessage.classList.remove('hidden');
         formMessage.innerHTML = `
-          <div style="padding: 16px; background: #4caf50; color: white; border-radius: 8px; margin-top: 16px;">
-            ✓ Message sent successfully!<br>
-            We'll get back to you within 24 hours.
+          <div style="padding: 16px; background: #25D366; color: white; border-radius: 8px; margin-top: 16px; text-align: center;">
+            <strong>✓ Almost Done!</strong><br>
+            Opening WhatsApp now...<br>
+            <small>Please click "Send" in WhatsApp to complete your submission.</small>
           </div>
         `;
         
-        // Clear form
-        contactForm.reset();
-        
-        // Hide message after 5 seconds
+        // Hide message after 8 seconds
         setTimeout(() => {
           formMessage.classList.add('hidden');
-        }, 5000);
+        }, 8000);
       }
       
-      console.log('Contact form submitted');
+      // Open WhatsApp after a short delay
+      setTimeout(() => {
+        window.open(whatsappURL, '_blank');
+      }, 500);
+      
+      // Clear form after WhatsApp opens
+      setTimeout(() => {
+        contactForm.reset();
+      }, 1000);
+      
+      console.log('✓ Contact form submitted - WhatsApp opened');
     });
   }
 }
+
 
 // Setup forms on page load
 setupContactForm('contact-form', 'form-message');
