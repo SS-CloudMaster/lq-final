@@ -747,8 +747,8 @@ function loadAllPages() {
                 <div class="w-32 h-32 bg-gradient-to-br from-[var(--accent)] to-purple-500 rounded-full flex items-center justify-center text-4xl font-bold text-white flex-shrink-0">LQ</div>
                 <div>
                   <h3 class="text-2xl font-bold mb-4">Our Story</h3>
-                  <p class="text-[var(--text-secondary)] mb-4">Started as a bootstrapped venture with a vision to help Indian businesses scale through digital transformation. We've grown from a one-person operation to a full-service agency, maintaining our commitment to transparency, results, and client success.</p>
-                  <p class="text-[var(--text-secondary)]">Our mission is simple: Help 100+ Indian businesses scale to ₹1Cr ARR by 2026 through strategic digital services and automation.</p>
+                  <p class="text-[var(--text-secondary)] mb-4">Launch Quests began as a small bootstrapped idea—to help Indian businesses grow through smart, reliable technology. From building our first website to offering complete software, IT, and digital marketing solutions, our journey has been driven by transparency, innovation, and real results.</p>
+                  <p class="text-[var(--text-secondary)]">Today, we partner with startups and corporates across India, helping them run smoother, scale faster, and embrace digital transformation with confidence. And as we expand into HR, accounting, and corporate services, our mission remains the same: to empower 100+ Indian businesses with a strong, future-ready digital ecosystem</p>
                 </div>
               </div>
             </div>
