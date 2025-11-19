@@ -370,8 +370,7 @@ ${message}
 🕒 *Submitted:* ${timestamp}
 📍 *Source:* Launch Quests Website
 
----
-_Please respond to this lead ASAP!_`;
+---_Please respond to this ASAP!_`;
       
       // URL encode the message
       const encodedMessage = encodeURIComponent(whatsappMessage);
@@ -415,6 +414,7 @@ _Please respond to this lead ASAP!_`;
 // Setup forms on page load
 setupContactForm('contact-form', 'form-message');
 setupContactForm('newsletter-form', 'newsletter-message');
+setupContactForm('contact-form-page', 'form-message-page');
 
 // ============================================
 // Newsletter Form
@@ -635,5 +635,52 @@ document.addEventListener('DOMContentLoaded', () => {
   setupContactForm('contact-form', 'form-message');
   setupNewsletterForm('newsletter-form');
 });
+
+// ============================================
+// Browser Back/Forward Button Support
+// ============================================
+(function() {
+  // Store original showPage function
+  const originalShowPage = window.showPage;
+  
+  // Override showPage to update browser history
+  window.showPage = function(pageName) {
+    // Call original showPage
+    originalShowPage(pageName);
+    
+    // Update URL hash and browser history
+    if (window.history && window.history.pushState) {
+      window.history.pushState(
+        { page: pageName }, 
+        document.title, 
+        `#${pageName}`
+      );
+    }
+  };
+  
+  // Listen for browser back/forward button clicks
+  window.addEventListener('popstate', (event) => {
+    if (event.state && event.state.page) {
+      // Navigate using the stored page from history
+      originalShowPage(event.state.page);
+    } else {
+      // Fallback: check URL hash
+      const hash = window.location.hash.replace('#', '');
+      if (hash && hash !== '') {
+        originalShowPage(hash);
+      } else {
+        originalShowPage('home');
+      }
+    }
+  });
+  
+  // Handle initial page load from URL hash
+  window.addEventListener('DOMContentLoaded', () => {
+    const initialHash = window.location.hash.replace('#', '');
+    if (initialHash && initialHash !== '') {
+      originalShowPage(initialHash);
+    }
+  });
+})();
 
 console.log('✓ Launch Quests App.js Loaded Successfully');
